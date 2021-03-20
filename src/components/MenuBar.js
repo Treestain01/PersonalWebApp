@@ -5,6 +5,10 @@ import {
     Image,
 } from 'react-native';
 import styles from '../styles/MenuBar.style';
+import {
+    MENU,
+    MENU_WHITE,
+} from '../constants/Images';
 
 class MenuBar extends React.Component {
     constructor() {
@@ -20,7 +24,7 @@ class MenuBar extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Image/>
+                <Image source={MENU_WHITE} />
             </View>
         );
     }
