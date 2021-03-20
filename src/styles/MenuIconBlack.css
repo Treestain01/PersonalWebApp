@@ -1,0 +1,75 @@
+:root {
+    --animation-curve: cubic-bezier(1, 0, 0, 1);
+}
+
+#menu-icon-body-black {
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+#menu-icon-click-black {
+    height: 4em;
+    width: 4.5em;
+    cursor: pointer;
+}
+
+#menu-icon-label-black {
+    width: 4.5em;
+    height: 0.75em;
+    background-color: black;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 1.6em;
+}
+
+#menu-icon-label-black::before,
+
+#menu-icon-label-black::after {
+    content: '';
+    width: 4.5em;
+    height: 0.75em;
+    background-color: black;
+    position: absolute;
+    display: block;
+    transition: all 0.6s var(--animation-curve);
+}
+
+#menu-icon-label-black::before {
+    top: -250%;
+    left: 0%;
+    transform-origin: left top;
+    transform: rotateZ(0deg);
+}
+
+#menu-icon-label-black::after {
+    bottom: -250%;
+    left: 0%;
+    transform-origin: left bottom;
+    transform: rotateZ(0deg);
+}
+
+#toggle-black:checked ~ label::before{
+    transform: rotateZ(41deg);
+    width: 6em;
+}
+
+#toggle-black:checked ~ label::after{
+    transform: rotateZ(-41deg);
+    width: 6em;
+}
+
+#toggle-black:checked ~ label{
+    background-color: white;
+}
+
+#toggle-black ~ label {
+    transition: all 0.5s var(--animation-curve);
+}
+
+#toggle-black {
+    display: none;
+}

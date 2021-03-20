@@ -5,6 +5,7 @@ import {
 } from 'react-native';
 import styles from '../styles/HomeScreen.style';
 import MenuBar from './MenuBar';
+import '../styles/App.css'
 
 class HomeScreen extends React.Component {
     constructor() {
@@ -19,9 +20,20 @@ class HomeScreen extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <MenuBar />
-            </View>
+            <div id="background">
+                <View style={styles.container}>
+                    <View style={styles.menuBar}>
+                        <MenuBar />
+                    </View>
+                    <View style={styles.titleBodyContainer}>
+                        <View style={styles.titleContainer}r>
+                            <Text style={styles.titleText}>Hello</Text>
+                            <div id="title-line">
+                            </div>
+                        </View>
+                    </View>
+                </View>
+            </div>
         );
     }
 }

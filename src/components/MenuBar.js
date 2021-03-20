@@ -9,7 +9,8 @@ import {
     MENU,
     MENU_WHITE,
 } from '../constants/Images';
-import MenuIcon from './MenuIcon';
+import MenuIconWhite from './MenuIconWhite';
+import MenuIconBlack from './MenuIconBlack';
 
 class MenuBar extends React.Component {
     constructor() {
@@ -26,9 +27,11 @@ class MenuBar extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.menuIconContainer}>
-                    <MenuIcon />
+                    <MenuIconBlack />
                 </View>
-                
+                <View>
+
+                </View>
             </View>
         );
     }

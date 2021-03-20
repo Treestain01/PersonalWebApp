@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import styles from '../styles/MenuIcon.style';
-import '../styles/MenuIcon.css';
+import React from 'react';
+import '../styles/MenuIconWhite.css';
 
-const MenuIcon = () => {
+const MenuIconWhite = () => {
     return (
         <body id="menu-icon-body">
             <label id="menu-icon-click" for="toggle">
@@ -13,4 +12,4 @@ const MenuIcon = () => {
     );
 }
 
-export default MenuIcon;
+export default MenuIconWhite;
