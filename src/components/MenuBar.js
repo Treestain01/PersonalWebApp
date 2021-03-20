@@ -9,6 +9,7 @@ import {
     MENU,
     MENU_WHITE,
 } from '../constants/Images';
+import MenuIcon from './MenuIcon';
 
 class MenuBar extends React.Component {
     constructor() {
@@ -24,7 +25,10 @@ class MenuBar extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Image source={MENU_WHITE} />
+                <View style={styles.menuIconContainer}>
+                    <MenuIcon />
+                </View>
+                
             </View>
         );
     }
