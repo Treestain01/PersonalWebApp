@@ -7,7 +7,7 @@ export default StyleSheet.create({
     },
     menuBar: {
         width: '100%',
-        position: 'absolute',
+        position: 'fixed',
         zIndex: 3,
     },
     titleBodyContainer: {

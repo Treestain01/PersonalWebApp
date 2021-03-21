@@ -11,6 +11,7 @@ import {
 } from '../constants/Images';
 import MenuIconWhite from './MenuIconWhite';
 import MenuIconBlack from './MenuIconBlack';
+import MenuItem from './MenuItem';
 
 class MenuBar extends React.Component {
     constructor() {
@@ -29,8 +30,11 @@ class MenuBar extends React.Component {
                 <View style={styles.menuIconContainer}>
                     <MenuIconBlack />
                 </View>
-                <View>
-
+                <View style={styles.menuContentContainer}>
+                    <MenuItem text={'HOME'}/>
+                    <MenuItem text={'ABOUT ME'}/>
+                    <MenuItem text={'PROJECTS'}/>
+                    <MenuItem text={'WORK HISTORY'}/>
                 </View>
             </View>
         );
